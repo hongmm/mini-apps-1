@@ -1,2 +1,40 @@
+<!DOCTYPE html>
+  <head>
 
+  </head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      grid-gap: 10px;
+      background-color: lightblue;
+      padding: 10px;
+      width: 320px;
+    }
+    .grid-item {
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px;
+      background-color: white;
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div id="1" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="2" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="3" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="4" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="5" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="6" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="7" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="8" class="grid-item" onClick='setPiece(event)'></div>
+      <div id="9" class="grid-item" onClick='setPiece(event)'></div>
+    </div>
+    <div id='winner'></div>
+    <button onClick='resetBoard()'>Reset</button>
+    <script src='app.js'></script>
+  </body>
+
+</html>
 
